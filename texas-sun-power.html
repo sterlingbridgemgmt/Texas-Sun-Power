@@ -1364,7 +1364,7 @@
         </div>
 
         <div class="tsp-chat-launcher-btn" onclick="tsp_toggleChatInterfaceWindow()">
-    <i class="fa-solid fa-sun" id="tsp-launcherIconNode"></i>
+    <span id="tsp-launcherIconNode">💬</span>
     <div class="tsp-notification-counter-badge" id="tsp-unreadCounterNode">0</div>
 </div>
     </div>
@@ -1583,7 +1583,7 @@ answer:"Premium Tier-1 manufacturers such as REC, Qcells, Panasonic, and others 
         tsp_systemChatFrame.classList.add('tsp-window-visible');
         tsp_floatingCalloutBubble.style.display = 'none';
 
-        tsp_launcherIconNode.className = "fa-solid fa-xmark";
+        tsp_launcherIconNode.innerText = "✕";
         tsp_unreadMessagesCount = 0;
         tsp_updateNotificationBadgeDisplay();
 
