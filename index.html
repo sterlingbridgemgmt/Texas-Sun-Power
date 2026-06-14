@@ -91,8 +91,6 @@ class="hidden md:hidden bg-[#07101d] border-t border-slate-800">
 
 <button onclick="switchView('portfolio')" class="block w-full text-left px-6 py-4 text-white">Projects</button>
 
-<button onclick="switchView('whytexas')" class="block w-full text-left px-6 py-4 text-white">Why Solar In Texas</button>
-
 <button onclick="switchView('contact')" class="block w-full text-left px-6 py-4 text-white">Contact</button>
 
 </div>
@@ -488,7 +486,7 @@ class="hidden md:hidden bg-[#07101d] border-t border-slate-800">
                         </div>
 
                         <div class="lg:col-span-7 bg-white rounded-2xl p-8 md:p-10 shadow-2xl">
-                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Roof Eligibility Assessment</h3>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Free Solar Savings Assessment</h3>
                             <p class="text-sm text-[#5f6b7a] mb-8">Please provide matching operational details to prevent data verification dropouts.</p>
                             
                             <form id="solar-blueprint-form" onsubmit="submitToMakeWebhook(event)" class="space-y-5 text-slate-800">
@@ -538,7 +536,7 @@ class="hidden md:hidden bg-[#07101d] border-t border-slate-800">
                                 <div id="form-alert-banner" class="hidden text-sm p-4 rounded-xl font-medium border"></div>
 
                                 <button type="submit" id="form-submit-trigger" class="w-full bg-[#ff5d00] hover:bg-[#e05200] text-white font-bold py-4 rounded-xl text-lg cursor-pointer">
-                                    <span>Submit Verification Payload</span>
+                                    <span>Get My Free Solar Estimate</span>
                                 </button>
                             </form>
                         </div>
@@ -889,7 +887,7 @@ history.pushState({}, '', routes[viewId] || '#home');
             } finally {
                 submitBtn.disabled = false;
                 submitBtn.classList.remove('opacity-40');
-                submitBtn.querySelector('span').innerText = "Submit Verification Payload";
+                submitBtn.querySelector('span').innerText = "Get My Free Solar Estimate";
             }
         }
 
